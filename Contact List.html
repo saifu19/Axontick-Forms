@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta id="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact List</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <style>
+        body {
+            margin: 0 20vw;
+        }
+    </style>
+    <body>
+        <h2 class="text-center">Contact List</h2>
+        <h3>Full Name</h3>
+        <h5>Contact ID</h5>
+        <form class="mt-3">
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="firstName">First Name</label>
+                    <input id="firstName" type="text" class="form-control">
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-5">
+                    <label for="lastName">Last Name</label>
+                    <input id="lastName" class="form-control" type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="address">Address</label>
+                    <input id="address" type="text" class="form-control">
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-5">
+                    <label for="city">City</label>
+                    <input id="city" class="form-control" type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="landlineNumber">Landline Number</label>
+                    <input id="landlineNumber" type="tel" class="form-control">
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-5">
+                    <label for="state">State</label>
+                    <input id="state" class="form-control" type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="mobileNumber">Mobile Number</label>
+                    <input id="mobileNumber" type="tel" class="form-control">
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-5">
+                    <label for="email">Email</label>
+                    <input id="email" class="form-control" type="email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="companyName">Company Name</label>
+                    <input id="companyName" type="text" class="form-control">
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-5">
+                    <label for="service">Service</label>
+                    <input id="service" class="form-control" type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <label for="serviceSelect">Service</label>
+                    <select id="serviceSelect" class="form-select">
+                        <option value="lawyer">Lawyer</option>
+                        <option value="valuer">Valuer</option>
+                        <option value="publication">Publication</option>
+                        <option value="ipc">IPC</option>
+                        <option value="securityAgency">Security Agency</option>
+                        <option value="assetTracing">Asset Tracing</option>
+                    </select>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-5">
+                    <label for="empanelled">Empanelled</label>
+                    <select id="empanelled" class="form-select">
+                        <option value="pending">Pending</option>
+                        <option value="yes">Yes</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <label for="note">Note</label>
+                <input id="note" class="form-control" type="text">
+            </div>
+            
+            <div class="d-flex justify-content-center mt-3">
+                <button class="btn btn-primary me-3">Clear</button>
+                <button class="btn btn-primary">Edit/Add</button>
+            </div>
+        </form>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+
+</html>

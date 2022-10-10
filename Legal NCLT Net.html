@@ -1,0 +1,154 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta id="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NCLT Net</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <style>
+        body {
+            margin: 0 20vw;
+        }
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+    </style>
+    <body>
+        <h2 class="text-center">NCLT Net</h2>
+        <p class="mt-2 fw-bold">NCLT_GUID: (Dynamic)</p>
+
+        <form>
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="caseName">Case Name</label>
+                    <input id="caseName" type="text" class="form-control">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <label for="court">Court</label>
+                    <input id="court" type="text" class="form-control">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <label for="applicant">Applicant</label>
+                    <input id="applicant" type="number" class="form-control">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="insolveryDate">Insolvery Commitment Date</label>
+                    <input id="insolveryDate" type="date" class="fomr-control">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <label for="ipr">IPR</label>
+                    <input id="ipr" type="number" class="form-control">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <label for="rp">RP</label>
+                    <input id="rp" type="text" class="form-control">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="IPE">IPE</label>
+                    <input id="IPE" type="text" class="form-control">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <label for="liquidator">Liquidator</label>
+                    <input id="liquidator" type="text" class="form-control">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <label for="liquidationValue">Liquidation Value</label>
+                    <input id="liquidationValue" type="number" class="form-control">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="petitioner">Petitioner</label>
+                    <textarea class="form-control" id="petitioner"></textarea>
+                </div>
+                <div class="col-md-6">
+                    <label for="respondent">Respondent</label>
+                    <textarea class="form-control" id="respondent"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="PRA">PRA</label>
+                    <input id="PRA" type="text" class="form-control">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <label for="ra">RA</label>
+                    <input id="ra" type="text" class="form-control">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <label for="currentStage">Current Stage</label>
+                    <input id="currentStage" type="date" class="form-control">
+                </div>
+            </div>
+                <div class="col-md-3">
+                    <label for="courtFees">Court Fees</label>
+                    <input id="courtFees" type="number" class="form-control">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <label for="regDate">Registeration Date</label>
+                    <input id="regDate" type="date" class="form-control">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <label for="billNum">Bill Number</label>
+                    <input id="billNum" type="number" class="form-control">
+                </div>
+            </div>
+            <label for="assetDetails">Asset Details</label>
+            <textarea class="form-control" id="assetDetails"></textarea>
+
+            <h2 class="text-center">Table Here</h2>
+
+            <div class="row">
+                <div class="col-md-9">
+                    <label for="plan">Plan</label>
+                    <textarea class="form-control" id="plan"></textarea>
+                </div>
+                <div class="col-md-3">
+                    <h3>Timeline Table</h3>
+                    <div class="row g-0">
+                        <div class="col-6">
+                            <label for="date">Date</label>
+                            <input class="form-control" id="date" type="date">
+                        </div>
+                        <div class="col-6">
+                            <label for="particulars">Particulars</label>
+                            <input class="form-control" id="particulars" type="text">
+                        </div>
+                    </div>
+                    <p class="text-center mt-2">
+                        <button class="btn btn-primary">Add/Save</button>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9">
+                    <label for="liquidationDetails">Liquidation Details</label>
+                    <textarea class="form-control" id="liquidationDetails"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9">
+                    <label for="scheme">IBC-Scheme 230-Companies Act</label>
+                    <textarea class="form-control" id="scheme"></textarea>
+                </div>
+            </div>
+        </form>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>

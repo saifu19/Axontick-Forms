@@ -1,0 +1,254 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Asset Details</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <style>
+        body {
+            margin: auto 10vw;
+        }
+        textarea {
+            width: 80% !important;
+            height: 100px ;
+        }
+        .r-none {
+            resize: none;
+        }
+    </style>
+    <body>
+        <h2 class="text-center">Asset Details</h2>
+        <form class="mt-3">
+            <label for="assetId">Asset Id</label>
+            <input id="assetId" class="form-control" type="text">
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="charge">Charge</label>
+                    <select id="charge" class="form-select">
+                        <option value="firstPassu">First Pari Passu</option>
+                        <option value="secondPassu">Second Pari Passu</option>
+                        <option value="exlusive">Exclusive</option>
+                        <option value="hypotycation">Hypotycation</option>
+                        <option value="pledge">Pledge</option>
+                    </select>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <label for="assetDesc">Asset Description</label>
+                    <select id="assetDesc" class="form-select">
+                        <option value="agriLand">Agricultural Land</option>
+                        <option value="naLand">NA Land</option>
+                        <option value="vacantLand">Vacant Land</option>
+                        <option value="land">Land</option>
+                        <option value="factoryBuilding">Factory building</option>
+                        <option value="residentialBuilding">Residential building</option>
+                        <option value="commBuilding">Commercial building</option>
+                        <option value="mall">mall</option>
+                        <option value="hospital">Hospital</option>
+                        <option value="school">School</option>
+                        <option value="equity">Equity</option>
+                        <option value="plantMac">Plant Machinvery</option>
+                        <option value="stock">Stock</option>
+                        <option value="ncd">NCD</option>
+                        <option value="instrument">Instrument</option>
+                    </select>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <label for="freehold">Freehold/Lockin</label>
+                    <select id="freehold" class="form-select">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="owner">Owner</label>
+                    <input id="owner" class="form-control" type="text">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <label for="mortgagor">Mortgagor</label>
+                    <input id="mortgagor" class="form-control" type="text">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <label for="mortgageType">Mortgage Type</label>
+                    <input id="mortgageType" class="form-control" type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="status">Status</label>
+                    <select id="status" class="form-select">
+                        <option value="ledersCharge">Leders Charge</option>
+                        <option value="charge">Charge</option>
+                        <option value="dispute">Dispute</option>
+                        <option value="stay">Stay</option>
+                        <option value="sold">Sold</option>
+                        <option value="underAuction">Under Auction</option>
+                    </select>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <label for="possession">Possession</label>
+                    <select id="possession" class="form-select">
+                        <option value="owned">Owned</option>
+                        <option value="rent">Rent</option>
+                        <option value="ol">OL</option>
+                    </select>
+                </div>
+                <label for="address">Address</label>
+                <textarea id="address" class="form-control"></textarea>
+                <label for="legalDesc">Legal Description</label>
+                <textarea id="legalDesc" class="form-control r-none"></textarea>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-3 border">
+                    <label for="locality">Locality</label>
+                    <input id="locality" class="form-control" type="text">
+                    <label for="city">City</label>
+                    <input id="city" class="form-control" type="text">
+                    <label for="state">State</label>
+                    <input id="state" class="form-control" type="text">
+                    <label for="pinCode">PIN Code</label>
+                    <input id="pinCode" class="form-control mb-2" type="text">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3 border">
+                    <label for="east">East</label>
+                    <input id="east" class="form-control" type="text">
+                    <label for="west">West</label>
+                    <input id="west" class="form-control" type="text">
+                    <label for="north">North</label>
+                    <input id="north" class="form-control" type="text">
+                    <label for="south">South</label>
+                    <input id="south" class="form-control mb-2" type="text">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3 border">
+                    <label for="leasedDate">Leased Date</label>
+                    <input id="leasedDate" class="form-control" type="date">
+                    <label for="lessor">Lessor</label>
+                    <input id="lessor" class="form-control" type="text">
+                    <label for="lessee">Lessee</label>
+                    <input id="lessee" class="form-control" type="text">
+                    <label for="tenor">Tenor</label>
+                    <input id="tenor" class="form-control mb-2" type="text">
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-3 border">
+                    <label for="area">Area</label>
+                    <input id="area" class="form-control" type="text">
+                    <label for="rate">Rate</label>
+                    <input id="rate" class="form-control mb-1" type="text">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3 border">
+                    <label for="insurance">Insurance</label>
+                    <input id="insurance" class="form-control" type="number">
+                    <label for="bookValue">Book Value</label>
+                    <input id="bookValue" class="form-control mb-1" type="number">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3 border">
+                    <label for="ndcDate">NDC Date</label>
+                    <input id="ndcDate" class="form-control" type="date">
+                    <label for="encumbrance">Encumbrance</label>
+                    <input id="encumbrance" class="form-control mb-1" type="text">
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-3 border">
+                    <label for="form">Form_8_13</label>
+                    <input id="form" class="form-control" type="text">
+                    <label for="cersai">Cersai ID</label>
+                    <input id="cersai" class="form-control mb-1" type="text">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3 border">
+                    <label for="custodian">Custodian</label>
+                    <select id="custodian" class="form-select">
+                        <option value="lender">Lender</option>
+                        <option value="drt">DRT</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <label for="securityTrustee">Security Trustee</label>
+                    <input id="securityTrustee" class="form-control mb-1" type="text">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3 border">
+                    <label for="mortgageDeed">Mortgage Deed</label>
+                    <input id="mortgageDeed" class="form-control" type="text">
+                    <label for="depositTitle">Deposit Title</label>
+                    <input id="depositTitle" class="form-control" type="text">
+                    <label for="titleDeed">Title Deed</label>
+                    <input id="titleDeed" class="form-control mb-1" type="text">
+                </div>
+            </div>
+            <label for="note">Note</label>
+            <textarea id="note" class="form-control"></textarea>
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="secType">Type of Security</label>
+                    <select id="secType" class="form-select">
+                        <option value="pledge">Pledge</option>
+                        <option value="lockin">Lockin</option>
+                        <option value="freehold">Freehold</option>
+                    </select>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <label for="holdingPercentage">Holding Percentage</label>
+                    <input id="holdingPercentage" class="form-control" type="number">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <label for="listed">Listed</label>
+                    <select id="listed" class="form-select">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="rateOfHolding">Rate of holding</label>
+                    <input id="rateofHolding" class="form-control" type="text">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <label for="faceValue">Face Value</label>
+                    <input id="faceValue" class="form-control" type="text">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <label for="couponRate">Coupon Rate</label>
+                    <input id="couponRate" class="form-control" type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="isin">ISIN</label>
+                    <input id="isin" class="form-control" type="text">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <label for="dpId">DP ID</label>
+                    <input id="dpId" class="form-control" type="text">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <label for="dpName">DP Name</label>
+                    <input id="dpName" class="form-control" type="text">
+                </div>
+            </div>
+            
+        </form>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
